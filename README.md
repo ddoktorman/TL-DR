@@ -20,3 +20,4 @@ AUTHORS
 
 OUTSIDE CODE
 ------------
+Source code used for nav-bar was downloaded from http://cssmenumaker.com/
