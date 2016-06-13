@@ -11,9 +11,12 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>TL;DR</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="icon" href="http://www.pngall.com/wp-content/uploads/2016/03/Book-PNG-5.png">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-   <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -279,12 +282,19 @@
 <br>
 
 <br>
-<p><font size = "5" color = "grey"> David Doktorman </font></p>
-<p><font size = "5" color = "grey"> Giorgio Vidali</font> </p>
-<center><img src="http://www.pngall.com/wp-content/uploads/2016/03/Book-PNG-5.png" alt="Book" width="300" height="230">
-</center>
-<center><p><font size="20" color="grey">Too Long; Didn't Read</font></p></center>
-<center> <p> <font size = "10" color = "grey"> TL;DR is a web application built for Stuyvesant High School students to catch up on their reading. Users can select their grade, class, and book, and the application returns a page with a general summary of the book, a chapter by chapter summary, character analysis, and themes. It utilizes a python script to scrape data from websites such as Shmoop and Sparknotes, and returns this information in an easy to read way. Enjoy!</font></p></center><br>
-<center <p><font size = "5" color = "grey"> Note: if the tl;dr page loads and the collapsible buttons aren't clickable, it means we couldn't find that book to generate a summary for you. Sorry! </font> </p> </center>
+<div class = "container-fluid">
+<p><font size = "3" color = "grey"> David Doktorman </font></p>
+<p><font size = "3" color = "grey"> Giorgio Vidali</font> </p><br>
+<center> <p> <font size = "5" color = "grey"> TL;DR is a web application built for students to catch up on their reading. Users can select their grade, class, and book, and the application returns a page with a general summary of the book, a chapter by chapter summary, character analysis, and themes. It utilizes a Python script to scrape data from websites such as Shmoop and Sparknotes, and returns this information in an easy to read way. Simply select a book from the top, or enter your own below. Enjoy!</font></p></center><br><br>
+<center><form class = "form-inline" role="form" action = "tldr.py" method = "get">
+  <div class="form-group">
+    <label for="book" style= "color:grey">Please enter a book (for best results, include author):</label>
+    <input type="text" class="form-control" name = "book" >
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form></center>
+<br><br>
+<center> <p> <font size = "3" color = "grey"> Note: if the tl;dr page loads and the collapsible buttons aren't clickable, it means we couldn't find that book to generate a summary for you. Sorry! </font> </p> </center>
+</div>
 </body>
 </html>
